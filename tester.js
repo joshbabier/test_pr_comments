@@ -28,7 +28,7 @@ export default Controller.extend(...MIXINS, {
 
     yield this one
 extra line
-      .decline() //modified - something should happen!!
+      .decline() //modified - something should happen!
       .catch((error) => this.setStatusError(this.getErrorStatus(error)));
   }),
 
