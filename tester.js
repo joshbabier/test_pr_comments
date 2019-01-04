@@ -27,7 +27,6 @@ export default Controller.extend(...MIXINS, {
     this.resetErrors();
 
     yield this
-      .get("multiCodeReview");
       .decline()
       .catch((error) => this.setStatusError(this.getErrorStatus(error)));
   }),
