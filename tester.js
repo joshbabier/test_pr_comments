@@ -36,7 +36,7 @@ export default Controller.extend(...MIXINS, {
     yield this
       .get("multiCodeReview")
       .save()
-      .then(() => component.didSave())
+      .then(() => component.didSave());
       .catch((response) => component.handleErrors(response.errors));
   }),
 });
