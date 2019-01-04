@@ -26,7 +26,7 @@ export default Controller.extend(...MIXINS, {
   mergeTask: task(function * () {
     this.resetErrors();
 
-    yield this
+    yield this one
       .decline() //modified - something should happen!!
       .catch((error) => this.setStatusError(this.getErrorStatus(error)));
   }),
